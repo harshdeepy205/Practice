@@ -58,10 +58,15 @@
 	margin-top: 15px;
   }
 /* navrbarcss   */
-
-
-
-
+/* post css */
+.post-card{
+	max-width: 500px;
+	height: max-content;
+	margin: 26px auto;
+}
+.card-action{
+	display: flex;
+}
 
 
 
