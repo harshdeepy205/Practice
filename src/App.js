@@ -13,7 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         {/* <Navbar /> */}
-        <Route exact path='/'>
+        <Route path='/'>
           <Home />
         </Route>
         <Route path="/signin">

@@ -45,13 +45,6 @@
   }
   
   @media (max-width: 485px) {
-
-.card-imagee{
-	object-fit: contain;
-	width: 100vw  ;
-}
-
-
 	.nav_bar {
 	  flex-direction: column;
 	  align-items: center;
@@ -67,7 +60,7 @@
 /* navrbarcss   */
 /* post css */
 .post-card{
-	/* max-width: 500px; */
+	max-width: 500px;
 	height: max-content;
 	margin: 0px auto;
 	scroll-behavior: smooth;
@@ -75,6 +68,9 @@
 .card-action{
 	display: flex;
 }
+
+
+
 
 
 
@@ -116,7 +112,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .wave{
@@ -332,7 +328,3 @@ a:hover{
 }
 
 
-.card{
-	width: fit-content;
-
-}

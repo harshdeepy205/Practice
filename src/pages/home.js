@@ -11,7 +11,7 @@ function Home() {
                 <div className="nav_bar">
                     <div className="logo">
                         {/* <img class="brand-logo" src="logo.PNG" alt="Not Found" /> */}
-                        <h3 class="brand-logo mxy-5" >Instagram</h3>
+                        <h3 class="brand-logo mxy-5" >🅸🅽🆂🆃🅰🅶🆁🅰🅼</h3>
                     </div>
                     <div className="menu_items">
                         <li><a href="#" className="a mx-4">Home</a></li>
@@ -25,7 +25,7 @@ function Home() {
                 <div className="card post-card">
                     <h4 className="card-title">Card Title</h4>
                     <div className="card-image">
-                        <img className="card-imagee" src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                        <img src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
                     </div>
                     <div className="card-action mx-2 my-2">
                         <a href="#" >This is a link</a>
@@ -41,7 +41,7 @@ function Home() {
                 <div className="card post-card my-2">
                     <h4 className="card-title">Card Title</h4>
                     <div className="card-image">
-                        <img className="card-imagee" src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                        <img src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
                     </div>
                     <div className="card-action mx-2 my-2">
                         <a href="#" >This is a link</a>
@@ -57,7 +57,7 @@ function Home() {
                 <div className="card post-card">
                     <h4 className="card-title">Card Title</h4>
                     <div className="card-image">
-                        <img className="card-imagee" src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                        <img src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
                     </div>
                     <div className="card-action mx-2 my-2">
                         <a href="#" >This is a link</a>
