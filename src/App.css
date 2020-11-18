@@ -62,7 +62,8 @@
 .post-card{
 	max-width: 500px;
 	height: max-content;
-	margin: 26px auto;
+	margin: 0px auto;
+	scroll-behavior: smooth;
 }
 .card-action{
 	display: flex;
