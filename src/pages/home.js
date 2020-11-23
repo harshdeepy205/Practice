@@ -1,8 +1,10 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css';
+import { Link } from 'react-router-dom'
 import { Button, Card, Row, Col } from 'react-materialize';
-// import PostCard from './postImage';
+import CreatePost from '../components/createPost'
+
 
 function Home() {
     return (
@@ -16,11 +18,12 @@ function Home() {
                     <div className="menu_items">
                         <li><a href="#" className="a mx-4">Home</a></li>
                         <li><a href="#" className="a mx-4">Profile</a></li>
+                        <li><Link to="/createPost" className="a mx-4">Create Post</Link></li>
                         <li><a href="#" className="a mx-4">Log Out</a></li>
                     </div>
                 </div>
             </div>
-            {/* <div className="row"> */}
+
             <div className="home">
                 <div className="card post-card">
                     <h4 className="card-title">Card Title</h4>

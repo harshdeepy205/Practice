@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import SignIn from './pages/signIn'
 import SignUp from './pages/signUp'
 import Home from './pages/home'
+import CreatePost from './components/createPost'
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         <Route path="/signup">
           <Navbar />
           <SignUp />
+        </Route>
+        <Route path="/createPost">
+          <CreatePost />
         </Route>
       </BrowserRouter>
     </>

@@ -80,16 +80,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 .row-reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -335,4 +325,11 @@ a:hover{
 .card{
 	width: fit-content;
 
+}
+
+
+#toast-container{
+	top:30px !important;
+	right: 20px !important;
+	left: auto !important;
 }
