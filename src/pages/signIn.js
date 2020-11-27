@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import avatar from '../img/avatar.svg'
 import wave from '../img/wave.png'
 import bg from '../img/bg.svg'
 import M from 'materialize-css'
 import { Link, useHistory } from 'react-router-dom'
+import { UserContext } from '../App'
 
 
 function SignIn() {
-
+    const { state, dispatch } = useContext(UserContext)
     const History = useHistory()
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
@@ -39,6 +40,7 @@ function SignIn() {
                 else {
                     localStorage.setItem('jwt', data.token)
                     localStorage.setItem('user', JSON.stringify(data.user))
+                    dispatch({ type: 'USER', payload: data.user })
                     M.toast({ html: "successfull", classes: "#2e7d32 green darken-3" })
                     // alert({ html: data.message })
                     History.push('/')

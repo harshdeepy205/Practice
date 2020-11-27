@@ -1,18 +1,20 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css';
-import { Link } from 'react-router-dom'
-import { Button, Card, Row, Col } from 'react-materialize';
+import NavHome from '../components/navHome'
+// import { Link } from 'react-router-dom'
+// import { Button, Card, Row, Col } from 'react-materialize';
 import CreatePost from '../components/createPost'
+
 
 
 function Home() {
     return (
         <>
-            <div className="cont-color shadow-lg p-3 mb-5 bg-white rounded">
+            {/* <div className="cont-color shadow-lg p-3 mb-5 bg-white rounded">
                 <div className="nav_bar">
                     <div className="logo">
-                        {/* <img class="brand-logo" src="logo.PNG" alt="Not Found" /> */}
+
                         <h3 class="brand-logo mxy-5" >🅸🅽🆂🆃🅰🅶🆁🅰🅼</h3>
                     </div>
                     <div className="menu_items">
@@ -22,7 +24,8 @@ function Home() {
                         <li><a href="#" className="a mx-4">Log Out</a></li>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <NavHome />
 
             <div className="home">
                 <div className="card post-card">
