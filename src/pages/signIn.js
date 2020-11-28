@@ -4,6 +4,7 @@ import avatar from '../img/avatar.svg'
 import wave from '../img/wave.png'
 import bg from '../img/bg.svg'
 import M from 'materialize-css'
+// import 'materialize-css/dist/css/materialize.min.css';
 import { Link, useHistory } from 'react-router-dom'
 import { UserContext } from '../App'
 
@@ -69,7 +70,7 @@ function SignIn() {
                                 <i className="fas fa-user"></i>
                             </div>
                             <div className="div">
-                                {/* <h5>Email</h5> */}
+
                                 <input type="text"
                                     className="input"
                                     placeholder="Email address"

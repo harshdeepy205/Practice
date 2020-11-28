@@ -3,9 +3,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { useHistory } from 'react-router-dom'
 // import 'materialize-css';
 import { Link } from 'react-router-dom'
-// import { UserContext } from '../App';
+import { UserContext } from '../App';
 
 function NavHome() {
+
+    const { state, dispatch } = useContext(UserContext)
+    const renderList = () => {
+        if (state) {
+            return [
+                <li><Link to="/" className="a mx-4">Home</Link></li>,
+                <li><Link to="#" className="a mx-4">Profile</Link></li>,
+                <li><Link to="/createPost" className="a mx-4">Create Post</Link></li>,
+                <li><Link to="#" className="a mx-4">Log Out</Link></li>
+            ]
+        }
+        else {
+            return [
+                <li><Link to="/signin" className="a mx-4">Signin</Link></li>,
+                <li><Link to="/signup" className="a mx-4">SignUp</Link></li>
+            ]
+        }
+    }
 
     return (
         <>
@@ -13,14 +31,10 @@ function NavHome() {
                 <div className="nav_bar">
                     <div className="logo">
 
-                        <h3 class="brand-logo mxy-5" >🅸🅽🆂🆃🅰🅶🆁🅰🅼</h3>
+                        <Link to={state ? "/" : "/signin"}><h3 class="brand-logo mxy-5" style={{ textDecoration: "none" }} >🅸🅽🆂🆃🅰🅶🆁🅰🅼</h3></Link>
                     </div>
                     <div className="menu_items">
-
-                        <li><a href="#" className="a mx-4">Home</a></li>
-                        <li><a href="#" className="a mx-4">Profile</a></li>
-                        <li><Link to="/createPost" className="a mx-4">Create Post</Link></li>
-                        <li><a href="#" className="a mx-4">Log Out</a></li>
+                        {renderList()}
                     </div>
                 </div>
             </div>

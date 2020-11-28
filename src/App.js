@@ -1,7 +1,7 @@
 import React, { useEffect, createContext, useReducer } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar'
+// import Navbar from './components/navbar'
 import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom'
 import SignIn from './pages/signIn'
 import SignUp from './pages/signUp'
@@ -9,6 +9,7 @@ import Home from './pages/home'
 import CreatePost from './components/createPost'
 // import { Switch } from '@material-ui/core';
 import { reducer, initialiState } from './reducer/userReducer'
+import NavHome from './components/navHome';
 
 
 export const UserContext = createContext()
@@ -33,11 +34,11 @@ const Routing = () => {
           <Home />
         </Route>
         <Route path="/signin">
-          <Navbar />
+          {/* <Navbar /> */}
           <SignIn />
         </Route>
         <Route path="/signup">
-          <Navbar />
+          {/* <Navbar /> */}
           <SignUp />
         </Route>
         <Route path="/createPost">
@@ -54,6 +55,7 @@ function App() {
     <>
       <UserContext.Provider value={{ state, dispatch }}>
         <BrowserRouter>
+          <NavHome />
           <Routing />
         </BrowserRouter>
       </UserContext.Provider>
