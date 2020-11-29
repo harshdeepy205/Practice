@@ -49,7 +49,7 @@ function CreatePost() {
         data.append('file', image)
         data.append('upload_preset', 'insta-clone')
         data.append('cloud_name', 'harsh205')
-        fetch("https://api.cloudinary.com/v1_1/harsh205/image/upload", {
+        fetch("https://api.cloudinary.com/v1_1/harsh205/image/uploa", {
             method: "post",
             body: data
         })
@@ -61,9 +61,6 @@ function CreatePost() {
             .catch(err => {
                 console.log(err)
             })
-
-
-
     }
 
     return (
@@ -97,8 +94,6 @@ function CreatePost() {
                    </button>
                 </div>
             </div>
-
-
         </>
     )
 }
