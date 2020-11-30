@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'materialize-css/dist/css/materialize.min.css'
 import 'materialize-css';
 import NavHome from '../components/navHome'
 import { Link } from 'react-router-dom'
@@ -49,7 +50,8 @@ function Home() {
                                     <img className="card-imagee" src={item.photo} />
                                 </div>
                                 <div className="card-action mx-2 my-2">
-                                    <a href="#" >This is a link</a>
+                                    {/* <a href="#" >This is a link</a> */}
+                                    <i class="material-icons" style={{ color: "red" }}>favorite</i>
                                     <a href="#" className="mx-4">This is a link</a>
                                 </div>
                                 <div className="my-2 mx-2 card-content">

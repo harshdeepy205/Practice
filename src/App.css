@@ -333,3 +333,15 @@ a:hover{
 	right: 20px !important;
 	left: auto !important;
 }
+
+
+/* gallery css */
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.items{
+	width: 30%;
+	/* height: 30%; */
+}

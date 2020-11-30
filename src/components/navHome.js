@@ -14,7 +14,7 @@ function NavHome() {
         if (state) {
             return [
                 <li><Link to="/" className="a mx-4">Home</Link></li>,
-                <li><Link to="#" className="a mx-4">Profile</Link></li>,
+                <li><Link to="/profile" className="a mx-4">Profile</Link></li>,
                 <li><Link to="/createPost" className="a mx-4">Create Post</Link></li>,
                 <li><Link to="#" className="a mx-4" onClick={() => {
                     localStorage.clear()

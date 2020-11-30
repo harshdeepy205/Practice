@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 import { useHistory } from 'react-router-dom'
 
@@ -49,7 +50,7 @@ function CreatePost() {
         data.append('file', image)
         data.append('upload_preset', 'insta-clone')
         data.append('cloud_name', 'harsh205')
-        fetch("https://api.cloudinary.com/v1_1/harsh205/image/uploa", {
+        fetch("https://api.cloudinary.com/v1_1/harsh205/image/upload", {
             method: "post",
             body: data
         })

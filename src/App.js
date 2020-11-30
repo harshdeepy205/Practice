@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom'
 import SignIn from './pages/signIn'
 import SignUp from './pages/signUp'
 import Home from './pages/home'
+import Profile from './pages/profile'
 import CreatePost from './components/createPost'
 // import { Switch } from '@material-ui/core';
 import { reducer, initialiState } from './reducer/userReducer'
@@ -23,7 +24,7 @@ const Routing = () => {
     // console.log(typeof (user))
     if (user) {
       dispatch({ type: "USER", payload: user })
-      history.push('/')
+      // history.push('/')
     }
     else {
       history.push('/signin')
@@ -45,6 +46,9 @@ const Routing = () => {
         </Route>
         <Route path="/createPost">
           <CreatePost />
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
       </Switch>
     </>
