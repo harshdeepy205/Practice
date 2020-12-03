@@ -46,10 +46,10 @@
   
   @media (max-width: 485px) {
 
-.card-imagee{
+/* .card-imagee{
 	object-fit: contain;
-	width: 100vw  ;
-}
+	width: 300px  ;
+} */
 
 
 	.nav_bar {
@@ -76,6 +76,16 @@
 	display: flex;
 }
 
+.card-imagee{
+	object-fit: contain;
+    width: 450px;
+}
+@media (max-width: 455px){
+	.card-imagee{
+		object-fit: contain;
+		width: 250px;
+	}
+}
 
 
 
