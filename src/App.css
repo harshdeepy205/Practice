@@ -85,6 +85,9 @@
 		object-fit: contain;
 		width: 250px;
 	}
+	body {
+		overflow: hidden;
+	}
 }
 
 
@@ -354,4 +357,11 @@ a:hover{
 .items{
 	width: 30%;
 	/* height: 30%; */
+}
+
+.profile_name{
+	float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
 }

@@ -8,6 +8,7 @@ import SignUp from './pages/signUp'
 import Home from './pages/home'
 import Profile from './pages/profile'
 import CreatePost from './components/createPost'
+import UserProfile from './pages/UserProfile'
 // import { Switch } from '@material-ui/core';
 import { reducer, initialiState } from './reducer/userReducer'
 import NavHome from './components/navHome';
@@ -37,18 +38,19 @@ const Routing = () => {
           <Home />
         </Route>
         <Route path="/signin">
-          {/* <Navbar /> */}
           <SignIn />
         </Route>
         <Route path="/signup">
-          {/* <Navbar /> */}
           <SignUp />
         </Route>
         <Route path="/createPost">
           <CreatePost />
         </Route>
-        <Route path="/profile">
+        <Route exact path="/profile">
           <Profile />
+        </Route>
+        <Route exact path="/profile/:userid">
+          <UserProfile />
         </Route>
       </Switch>
     </>
