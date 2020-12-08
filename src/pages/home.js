@@ -131,7 +131,7 @@ function Home() {
                 <div className="nav_bar">
                     <div className="logo">
 
-                        <h3 class="brand-logo mxy-5" >🅸🅽🆂🆃🅰🅶🆁🅰🅼</h3>
+                        <h3 class="brand-logo mxy-5" ></h3>
                     </div>
                     <div className="menu_items">
                         <li><a href="#" className="a mx-4">Home</a></li>
