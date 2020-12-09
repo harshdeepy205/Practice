@@ -7,9 +7,10 @@ import Button from 'react-bootstrap/Button'
 
 const Profile = () => {
     const [userProfile, setProfile] = useState(null)
-    const [displayFollow, setDisplayFollow] = useState(true)
     const { state, dispatch } = useContext(UserContext)
     const { userid } = useParams()
+    const [displayFollow, setDisplayFollow] = useState(state ? !state.following.includes(userid) : true)
+
     console.log(userid)
     useEffect(() => {
         fetch(`http://localhost:5000/user/${userid}`, {

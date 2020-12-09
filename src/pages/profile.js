@@ -4,6 +4,7 @@ import { UserContext } from '../App'
 const Profile = () => {
     const [mypics, setPics] = useState([])
     const { state, dispatch } = useContext(UserContext)
+    console.log(state)
     useEffect(() => {
         fetch('http://localhost:5000/mypost', {
             headers: {
