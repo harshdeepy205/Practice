@@ -177,7 +177,7 @@ function Home() {
                                     {
                                         item.comments.map(record => {
                                             return (
-                                                <h6 key={record._id}><span>{record.postedBy.name}</span> {record.text}</h6>
+                                                <h6 key={record._id} ><span style={{ fontWeight: "bold" }}>{record.postedBy.name}</span> {record.text}</h6>
                                             )
                                         })
                                     }
