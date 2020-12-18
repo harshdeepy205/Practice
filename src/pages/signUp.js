@@ -59,7 +59,7 @@ function SignUp() {
             .then(data => {
                 console.log(data)
                 if (data.error) {
-                    // alert({ html: data.error })
+
                     M.toast({ html: data.error, classes: "#e53935 red darken-1" })
                 }
                 else {
