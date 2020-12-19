@@ -166,7 +166,6 @@ function Home() {
                                         <i class="material-icons" onClick={() => { unlikePost(item._id) }} style={{ color: "red", cursor: "pointer" }}>favorite</i>
                                         :
                                         <i class="material-icons" onClick={() => { likePost(item._id) }} style={{ cursor: "pointer" }}>favorite_border </i>
-
                                     }
                                     {/* <a href="#" className="mx-4">This is a link</a> */}
                                 </div>
