@@ -43,7 +43,7 @@ function SignIn() {
                     localStorage.setItem('user', JSON.stringify(data.user))
                     dispatch({ type: 'USER', payload: data.user })
                     M.toast({ html: "successfull", classes: "#2e7d32 green darken-3" })
-                    // alert({ html: data.message })
+
                     History.push('/')
                 }
 
