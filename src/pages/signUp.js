@@ -72,7 +72,6 @@ function SignUp() {
             })
     }
 
-
     const SendPostData = () => {
 
         if (image) {
