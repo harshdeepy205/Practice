@@ -71,7 +71,6 @@ function SignUp() {
                 console.log(err)
             })
     }
-
     const SendPostData = () => {
 
         if (image) {
