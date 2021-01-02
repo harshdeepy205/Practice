@@ -62,7 +62,6 @@ const Profile = () => {
         setImage(file)
 
     }
-
     return (
         <>
             <div style={{ maxWidth: "550px", margin: "0px auto" }} >
@@ -75,7 +74,6 @@ const Profile = () => {
                     <div>
                         <img style={{ width: "160px", height: "160px", borderRadius: "80px" }}
                             src={state ? state.photo : "loading"} />
-
                         {/* <Button variant="info" className="followbtn" type="file"
                             onChange={(e) => updatePhoto(e.target.files[0])} > Update Pic</Button> */}
                         <Form.File id="formcheck-api-regular">
@@ -94,7 +92,6 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="gallery">
                     {
                         mypics.map(item => {
