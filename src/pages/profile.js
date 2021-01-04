@@ -79,8 +79,6 @@ const Profile = () => {
                         <Form.File id="formcheck-api-regular">
                             <Form.File.Input onChange={(e) => updatePhoto(e.target.files[0])}></Form.File.Input>
                         </Form.File>
-
-
                     </div >
 
                     <div>
