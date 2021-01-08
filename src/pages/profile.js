@@ -80,7 +80,6 @@ const Profile = () => {
                             <Form.File.Input onChange={(e) => updatePhoto(e.target.files[0])}></Form.File.Input>
                         </Form.File>
                     </div >
-
                     <div>
                         <h4>{state ? state.name : "loading"}</h4>
                         <div style={{ display: "flex", justifyContent: "space-between", width: "108%" }}>
